@@ -34,18 +34,22 @@ exports.html = '<?xml version="1.0" encoding="utf-8"?>\
 \
 </feed>';
 exports.expected = {
-	type: "atom",
-	id: "urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6",
-	title: "Example Feed",
-	link: "http://example.org/feed/",
-	description: "A subtitle.",
-	updated: new Date("2003-12-13T18:30:02Z"),
-	author: "johndoe@example.com",
-	items: [{
-		id: "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a",
-		title: "Atom-Powered Robots Run Amok",
-		link: "http://example.org/2003/12/13/atom03",
-		description: "Some text.",
-		pubDate: new Date("2003-12-13T18:30:02Z")
-	}]
+  "title": "Example Feed",
+  "subtitle": "A subtitle.",
+  "link": "http://example.org/feed/",
+  "id": "urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6",
+  "updated": "2003-12-13T18:30:02.000Z",
+  "author": "John Doejohndoe@example.com",
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "type": "feed",
+  "items": [
+    {
+      "title": "Atom-Powered Robots Run Amok",
+      "link": "http://example.org/2003/12/13/atom03",
+      "id": "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a",
+      "updated": "2003-12-13T18:30:02Z",
+      "summary": "Some text."
+    }
+  ]
 };
