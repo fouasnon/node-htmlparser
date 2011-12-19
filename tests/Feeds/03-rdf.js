@@ -12,7 +12,6 @@ exports.html = '<?xml version="1.0" encoding="UTF-8"?>\n<rdf:RDF xmlns:rdf="http
 exports.expected = {
   "title": "craigslist | all community in SF bay area",
   "link": "http://sfbay.craigslist.org/ccc/",
-  "description": "",
   "dc:language": "en-us",
   "dc:rights": "Copyright 2011 craigslist, inc.",
   "dc:publisher": "webmaster@craigslist.org",
@@ -23,6 +22,7 @@ exports.expected = {
   "syn:updateBase": "2011-11-04T16:39:10.000Z",
   "syn:updateFrequency": "4",
   "syn:updatePeriod": "hourly",
+  "type": "rdf:RDF",
   "items": [
     {
       "title": "![CDATA[ Music Equipment Repair and Consignment ]]",
@@ -48,6 +48,5 @@ exports.expected = {
       "dc:type": "text",
       "dcterms:issued": "2011-11-04T16:34:54.000Z"
     }
-  ],
-  "type": "rdf:RDF"
+  ]
 };

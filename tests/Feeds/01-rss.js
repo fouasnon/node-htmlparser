@@ -65,7 +65,6 @@ exports.expected = {
   "generator": "Weblog Editor 2.0",
   "managingEditor": "editor@example.com",
   "webMaster": "webmaster@example.com",
-  "item": "Star Cityhttp://liftoff.msfc.nasa.gov/news/2003/news-starcity.aspHow do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's &lt;a href=\"http://howe.iki.rssi.ru/GCTC/gctc_e.htm\"&gt;Star City&lt;/a&gt;.Tue, 03 Jun 2003 09:39:21 GMThttp://liftoff.msfc.nasa.gov/2003/06/03.html#item573",
   "guid": "http://liftoff.msfc.nasa.gov/2003/06/03.html#item573",
   "type": "rss",
   "items": [
