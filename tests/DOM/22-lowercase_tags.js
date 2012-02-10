@@ -1,12 +1,12 @@
 exports.name = "Basic test";
 exports.options = {
 	  handler: {}
-	, parser: {}
+	, parser: {lowerCaseTags:true}
 };
-exports.html = "<!DOCTYPE html><html><title>The Title</title><body>Hello world</body></html>";
+exports.html = "<!DOCTYPE html><HTML><TITLE>The Title</title><BODY>Hello world</body></html>";
 exports.expected = [
   {
-    "name": "!DOCTYPE",
+    "name": "!doctype",
     "data": "!DOCTYPE html",
     "type": "directive"
   },

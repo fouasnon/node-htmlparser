@@ -1,6 +1,6 @@
-exports.name = "simple";
-exports.options = {handler: {}, parser: {}};
-exports.html = "<h1 class=test>adsf</h1>";
+exports.name = "Lowercase tags";
+exports.options = {handler: {}, parser: {lowerCaseTags:true}};
+exports.html = "<H1 class=test>adsf</H1>";
 exports.expected = [
   {
     "event": "opentagname",

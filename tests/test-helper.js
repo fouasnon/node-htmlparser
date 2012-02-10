@@ -1,4 +1,5 @@
-var Parser = require("../lib/Parser.js"),
+var htmlparser = require(".."),
+	Parser = htmlparser.Parser,
 	chunkSize = 5;
 
 exports.writeToParser = function(handler, options, data){
@@ -11,3 +12,11 @@ exports.writeToParser = function(handler, options, data){
 	//then parse everything
 	parser.parseComplete(data);
 }
+
+var EVENTS = Object.keys(htmlparser.EVENTS);
+
+//remove onend and onerror from events
+EVENTS.splice(EVENTS.indexOf("end"), 1);
+EVENTS.splice(EVENTS.indexOf("error"), 1);
+
+exports.EVENTS = EVENTS;
